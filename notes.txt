@@ -1,0 +1,8 @@
+Setting up state
+
+1. StateProvider.js
+    set up data layer
+    wrap app in data provider 
+    set up state access
+
+2. Set up reducer.js
