@@ -6,3 +6,9 @@ Setting up state
     set up state access
 
 2. Set up reducer.js
+
+
+
+export const getBasketTotal = (basket) => {
+  return(basket?.reduce((amount,item) => item.price + amount, 0))
+}

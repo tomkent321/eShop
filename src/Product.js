@@ -19,12 +19,13 @@ const addToBasket = () => {
       image: image,
       price: price,
       rating: rating,
+      key: id,
     },
   })
 }
 
   return (
-    <div className='product'>
+    <div className='product' key={id}>
       <div className='product__info'>
         <p>{title}</p>
         <p className='product__price'>
@@ -35,7 +36,7 @@ const addToBasket = () => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={i}>⭐</p>
             ))}
         </div>
             <h5>#{id}</h5>
