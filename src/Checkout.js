@@ -24,7 +24,7 @@ function Checkout() {
               image={item.image}
               price={item.price}
               rating={item.rating}
-              key={item.id + i}
+              key={item.id + i}  //to keep the key unique with dupe products
             />
           ))}
         </div>
